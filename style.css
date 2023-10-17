@@ -1,5 +1,5 @@
 :root{
-    --color-dark: rgb(36, 1, 41);
+    --color-dark: rgb(14, 14, 14);
     --color-dark2: rgb(32, 32, 32);
     --color-dark3: rgb(22, 22, 22);
     --color-white: #fff;
@@ -10,13 +10,22 @@
 }
 
 body{
-    font-family: 'Lato';
+    font-family: 'Sofia Sans Condensed', sans-serif;
     background-color: var(--color-dark);
     color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 10%;
+}
+#header{
+    border: none;
+    padding: .4rem;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .content{
@@ -37,20 +46,30 @@ body{
     border: none;
     font-size: 1rem;
     outline: none;
-    padding: 1rem;
+    padding: 10px;
 }
 
 #input-new-task{
     width: 20rem;
     border-radius: 1rem;
+    padding: .6rem;
+}
+
+#input-data{
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    width: 10rem;
+    padding: .3rem;
 }
 
 #btn-new-task{
     background-color: var(--color-dark2);
     color: var(--color-white);
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
     transition: .4s;
 }
@@ -83,11 +102,13 @@ body{
 }
 
 #btn-ok{
+    background-color: var(--color-green);
+    color: var(--color-white);
     border: none;
     padding: .4rem .8rem;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
